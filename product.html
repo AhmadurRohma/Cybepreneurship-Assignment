@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Sales Page</title>
+    <style>
+    /* General Body Styling */
+    body {
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to right, #6a11cb, #2575fc);
+        color: #fff;
+    }
+
+    /* Container */
+    .container {
+        max-width: 900px;
+        margin: auto;
+        padding: 30px;
+        text-align: center;
+    }
+
+    /* Title Styling */
+    h1 {
+        font-size: 3em;
+        font-weight: 800;
+        margin-bottom: 20px;
+        color: #fff;
+        text-transform: uppercase;
+        background: -webkit-linear-gradient(#ff6a00, #ff9900);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    /* Product Image */
+    .product-img {
+        max-width: 35%; /* Adjusted size for better fit */
+        height: auto;
+        border-radius: 15px;
+        margin: 20px auto;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        animation: float 3s ease-in-out infinite;
+    }
+
+    /* Float Animation */
+    @keyframes float {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    /* Features and Benefits Sections */
+    .features, .benefits {
+        margin: 30px 0;
+        padding: 25px;
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        text-align: left;
+    }
+
+    .features h2, .benefits h2 {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+        font-weight: 700;
+        color: #fff;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+        padding-bottom: 8px;
+    }
+
+    .features ul, .benefits ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .features li, .benefits li {
+        margin: 10px 0;
+        padding: 12px 20px;
+        font-size: 1.2em;
+        background: rgba(255, 255, 255, 0.1);
+        border-left: 4px solid #ff9900;
+        border-radius: 6px;
+        transition: all 0.3s ease;
+    }
+
+    .features li:hover, .benefits li:hover {
+        background: rgba(255, 255, 255, 0.3);
+        transform: scale(1.05);
+    }
+
+    /* Price Section */
+    .price {
+        font-size: 2.5em;
+        font-weight: 700;
+        color: #ff9900;
+        margin: 30px 0;
+        text-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Button Styling */
+    .btn {
+        display: inline-block;
+        background: linear-gradient(to right, #ff6a00, #ff9900);
+        color: #fff;
+        padding: 15px 40px;
+        font-size: 1.3em;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 700;
+        border-radius: 50px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        margin-top: 20px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .btn:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .container {
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.2em;
+        }
+
+        .product-img {
+            max-width: 30%;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+            font-size: 1.1em;
+        }
+    }
+</style>
+
+    
+    
+    
+    
+    
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Travel Backpack Expandable</h1>
+        <img src="bag.jpg.png" alt="Product Image">
+        
+        <h2>Features</h2>
+        <ul>
+            <li>Shoes compartment</li>
+            <li>8L space</li>
+            <li>4 layers off space</li>
+        </ul>
+
+        <h2>Benefits</h2>
+        <ul>
+            <li>Benefit 1: Waterproof bag that can make sure the electronic stuff is secure.</li>
+            <li>Benefit 2: Big volume of space that can carry many things.</li>
+            <li>Benefit 3: Can isolate the wet things with other dry things.</li>
+        </ul>
+
+        <p class="price">Price: RM75.70</p>
+
+        <a href="https://shopee.com.my/MY-available-50-80L-travel-bagpack-expandable-waterproof-hiking-Backpack-with-shoe-compartment-15.6-17-18-inch-laptop-backpack-man-旅行背包-登山-beg-galas-lelaki-i.415663039.20972782572" class="btn" target="_blank">Visit Official Website</a>
+    </div>
+</body>
+</html>
